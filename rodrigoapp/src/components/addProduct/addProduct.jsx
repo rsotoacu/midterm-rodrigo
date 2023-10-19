@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./addProduct.css";
+
 
 //Properties of the form
 export default function AddProduct() {
@@ -26,7 +28,8 @@ export default function AddProduct() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    
+    <form onSubmit={handleSubmit} className="addProduct">
       <label htmlFor="name">
         Name:
       </label>
